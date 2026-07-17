@@ -6,22 +6,22 @@
   color: #08111f;
 }
 
-.leftPanel,
-.rightPanel {
-  min-width: 0;
-}
-
-.leftPanel {
+.container {
   max-width: 1600px;
   margin: 0 auto;
-  padding: 28px 74px 52px;
+  padding-left: 74px;
+  padding-right: 74px;
 }
 
-.rightPanel {
-  display: flex;
-  flex-direction: column;
-  border-top: 1px solid #e2e7ec;
-  background: linear-gradient(180deg, rgba(248, 251, 253, 0.92), #ffffff 58%);
+.headerSection {
+  padding-top: 28px;
+}
+
+.featureSection,
+.needsSection,
+.platformsSection {
+  position: relative;
+  width: 100%;
 }
 
 .header {
@@ -186,6 +186,10 @@
   padding-top: 64px;
 }
 
+.hero .container {
+  position: relative;
+}
+
 .heroCopy h1 {
   max-width: 680px;
   font-size: clamp(36px, 2.35vw, 42px);
@@ -228,7 +232,6 @@
 }
 
 .heroArt img,
-.analyticsArt img,
 .featureImage img,
 .caseImage img {
   width: 100%;
@@ -241,9 +244,7 @@
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 18px;
   align-items: center;
-  width: min(100%, 1180px);
   margin: 10px auto 42px;
-  padding: 0 38px;
 }
 
 .platformCard {
@@ -677,20 +678,13 @@
   flex: 0 0 34px;
 }
 
-.analyticsArt {
-  width: min(640px, 76%);
-  align-self: center;
-  margin-top: 42px;
-}
-
 .featureBlock {
   display: grid;
   grid-template-columns: minmax(260px, 0.82fr) minmax(280px, 1fr);
   gap: 36px;
   align-items: center;
-  width: min(100%, 980px);
-  margin: 0 auto;
-  padding: 28px 38px 22px;
+  width: 100%;
+  padding: 28px 0 22px;
 }
 
 .featureImage {
@@ -719,15 +713,17 @@
 }
 
 .needsSection {
-  width: min(100%, 980px);
+  padding-bottom: 18px;
+}
+
+.needsGrid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 14px;
-  margin: 0 auto;
-  padding: 0 38px 18px;
+  width: 100%;
 }
 
-.needsSection article {
+.needsGrid article {
   display: flex;
   gap: 12px;
   align-items: flex-start;
@@ -737,7 +733,7 @@
   background: rgba(255, 255, 255, 0.8);
 }
 
-.needsSection article span {
+.needsGrid article span {
   display: grid;
   width: 34px;
   height: 34px;
@@ -748,36 +744,38 @@
   background: #fff0f2;
 }
 
-.needsSection p {
+.needsGrid p {
   color: #4e5967;
   font-size: 14px;
   line-height: 1.5;
 }
 
 .bottomStats {
+  padding-bottom: 42px;
+}
+
+.statsGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   width: min(100%, 980px);
   margin: 0 auto;
-  padding: 22px 60px 42px;
+  padding-top: 22px;
 }
 
-.bottomStats article {
+.statsGrid article {
   display: grid;
   justify-items: center;
   text-align: center;
 }
 
-.bottomStats .statIcon {
+.statsGrid .statIcon {
   margin-bottom: 14px;
 }
 
 .testimonialsSection {
-  width: 100%;
-  max-width: 1600px;
-  margin: 0 auto 46px;
-  padding: 28px 74px 0;
+  margin-bottom: 46px;
+  padding-top: 28px;
 }
 
 .testimonialHeader {
@@ -914,7 +912,7 @@
   color: #ffffff;
   background:
     linear-gradient(145deg, rgba(6, 17, 31, 0.92), rgba(0, 152, 118, 0.84)),
-    url("/assets/analytics-platform.png") center / cover;
+    url("/assets/target-marketplace-analytics.png") center / cover;
 }
 
 .testimonialPreview span {
@@ -982,7 +980,7 @@
 }
 
 .footer {
-  padding: 32px 38px 24px;
+  padding: 32px 0 24px;
   color: #d7e0e8;
   background: linear-gradient(145deg, #071423, #0b1a28);
 }
@@ -991,8 +989,6 @@
   display: grid;
   grid-template-columns: repeat(4, minmax(80px, 1fr)) minmax(210px, 1.5fr);
   gap: 28px;
-  max-width: 1180px;
-  margin: 0 auto;
 }
 
 .footerColumn,
@@ -1073,9 +1069,6 @@
   border-top: 1px solid rgba(255, 255, 255, 0.14);
   color: #aeb9c4;
   font-size: 12px;
-  max-width: 1180px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .socials {
@@ -1091,12 +1084,9 @@
     background: #ffffff;
   }
 
-  .leftPanel {
-    padding: 34px clamp(22px, 5vw, 64px) 28px;
-  }
-
-  .rightPanel {
-    border-top: 1px solid #e2e7ec;
+  .container {
+    padding-left: clamp(22px, 5vw, 64px);
+    padding-right: clamp(22px, 5vw, 64px);
   }
 
   .header {
@@ -1106,18 +1096,6 @@
   .hero {
     min-height: 330px;
     padding-top: 48px;
-  }
-
-  .featureBlock,
-  .testimonialsSection,
-  .bottomStats,
-  .footer {
-    padding-left: clamp(22px, 6vw, 64px);
-    padding-right: clamp(22px, 6vw, 64px);
-  }
-
-  .analyticsArt {
-    margin-top: 24px;
   }
 }
 
@@ -1137,17 +1115,19 @@
     margin-left: auto;
   }
 
-  .hero,
+  .hero .container,
   .caseGrid,
   .featureBlock,
   .testimonialSlider {
     grid-template-columns: 1fr;
   }
 
-  .hero {
+  .hero .container {
     display: grid;
-    grid-template-columns: 1fr;
     gap: 18px;
+  }
+
+  .hero {
     min-height: 0;
     padding-top: 40px;
   }
@@ -1166,8 +1146,8 @@
   }
 
   .serviceGrid,
-  .bottomStats,
-  .needsSection,
+  .statsGrid,
+  .needsGrid,
   .testimonialDots {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1184,8 +1164,13 @@
 }
 
 @media (max-width: 640px) {
-  .leftPanel {
-    padding: 22px 18px 24px;
+  .container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .headerSection {
+    padding-top: 22px;
   }
 
   .mobileMenu {
@@ -1209,8 +1194,8 @@
 
   .partnerRow,
   .serviceGrid,
-  .bottomStats,
-  .needsSection,
+  .statsGrid,
+  .needsGrid,
   .testimonialDots,
   .footerGrid {
     grid-template-columns: 1fr;
@@ -1219,7 +1204,6 @@
   .partnerRow {
     gap: 18px;
     margin-bottom: 34px;
-    padding: 0 18px;
   }
 
   .serviceCard {
@@ -1265,19 +1249,6 @@
   .slideImageBadge {
     left: 12px;
     bottom: 12px;
-  }
-
-  .featureBlock,
-  .needsSection,
-  .testimonialsSection,
-  .bottomStats,
-  .footer {
-    padding-left: 18px;
-    padding-right: 18px;
-  }
-
-  .analyticsArt {
-    width: 92%;
   }
 
   .featureCopy h2 {

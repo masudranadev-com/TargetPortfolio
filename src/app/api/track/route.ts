@@ -32,7 +32,7 @@ async function lookupIpLocation(ip: string): Promise<IpLocation> {
   try {
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 1400);
-    const response = await fetch(`https://ipwho.is/${encodeURIComponent(ip)}`, {
+    const response = await fetch(`http://ipwho.is/${encodeURIComponent(ip)}`, {
       signal: controller.signal,
       cache: "no-store",
     });

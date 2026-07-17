@@ -5,19 +5,6 @@ import { useEffect } from "react";
 
 const storageKey = "mr_client_uuid";
 
-type BrowserLocation = {
-  ip?: string;
-  city?: string;
-  region?: string;
-  country?: string;
-  latitude?: number;
-  longitude?: number;
-  timezone?: string;
-};
-
-let locationPromise: Promise<BrowserLocation> | null = null;
-let cachedLocation: BrowserLocation = {};
-
 function cleanUuid(uuid: string | null) {
   return uuid?.trim().slice(0, 80) || "";
 }
@@ -43,43 +30,6 @@ function getClientUuid(urlUuid: string | null) {
   return uuid;
 }
 
-async function getBrowserLocation() {
-  if (locationPromise) {
-    return locationPromise;
-  }
-
-  locationPromise = fetch("https://ipapi.co/json/", { cache: "no-store" })
-    .then((response) => (response.ok ? response.json() : null))
-    .then(
-      (data: {
-        ip?: string;
-        city?: string;
-        region?: string;
-        country_name?: string;
-        latitude?: number;
-        longitude?: number;
-        timezone?: string;
-      } | null) => {
-        cachedLocation = data
-          ? {
-              ip: data.ip,
-              city: data.city,
-              region: data.region,
-              country: data.country_name,
-              latitude: data.latitude,
-              longitude: data.longitude,
-              timezone: data.timezone,
-            }
-          : {};
-
-        return cachedLocation;
-      },
-    )
-    .catch(() => ({}));
-
-  return locationPromise;
-}
-
 function sendActivity(payload: {
   uuid: string;
   pagePath: string;
@@ -94,7 +44,6 @@ function sendActivity(payload: {
     language: navigator.language,
     timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
     screen: `${window.screen.width}x${window.screen.height}`,
-    browserLocation: cachedLocation,
   });
 
   if (navigator.sendBeacon) {
@@ -124,21 +73,6 @@ export function ClientActivityTracker() {
     const pageTitle = document.title || pagePath;
     const startedAt = Date.now();
     let sentPageTime = false;
-
-    getBrowserLocation().then((browserLocation) => {
-      if (!browserLocation.ip && !browserLocation.city) {
-        return;
-      }
-
-      sendActivity({
-        uuid,
-        pagePath,
-        pageTitle,
-        area: "Browser location",
-        eventType: "Location updated",
-        durationMs: 0,
-      });
-    });
 
     sendActivity({
       uuid,

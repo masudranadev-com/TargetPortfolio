@@ -8,12 +8,14 @@ if (!command) {
   process.exit(1);
 }
 
-process.env.NODE_ENV = command === "dev" ? "development" : "production";
+const nextBin = require.resolve("next/dist/bin/next");
+const env = {
+  ...process.env,
+  NODE_ENV: command === "dev" ? "development" : "production",
+};
 
-const executable = process.platform === "win32" ? "next.cmd" : "next";
-const result = spawnSync(executable, [command, ...args], {
-  env: process.env,
-  shell: true,
+const result = spawnSync(process.execPath, [nextBin, command, ...args], {
+  env,
   stdio: "inherit",
 });
 

@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { Box, MoreVertical } from "lucide-react";
+import { MoreVertical } from "lucide-react";
 import { useState } from "react";
+import { LogoMark } from "@/components/LogoMark";
 import styles from "../app/page.module.css";
 
 const navItems = [
@@ -20,9 +21,7 @@ export function SiteHeader() {
       <div className={styles.container}>
         <header className={styles.header}>
           <Link className={styles.brand} href="/" aria-label="MR InfinityX home">
-            <span className={styles.logoMark}>
-              <Box size={22} strokeWidth={3} />
-            </span>
+            <LogoMark className={styles.logoMark} />
             <span>MR InfinityX</span>
           </Link>
 

@@ -20,6 +20,16 @@ export const metadata: Metadata = {
   title: "MR InfinityX | Target Marketplace Services",
   description:
     "Target Platform product SEO, ratings, reviews, keyword analysis, and content management services.",
+  applicationName: "MR InfinityX",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: [{ url: "/apple-icon", sizes: "180x180", type: "image/png" }],
+  },
+  manifest: "/manifest.webmanifest",
 };
 
 export default function RootLayout({

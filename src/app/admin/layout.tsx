@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Box, LayoutDashboard, Search, Settings, Users, User } from "lucide-react";
+import { LayoutDashboard, Search, Settings, Users, User } from "lucide-react";
+import { LogoMark } from "@/components/LogoMark";
 import { isAdminAuthenticated } from "@/lib/admin-auth";
 import { logoutAdmin } from "./actions";
 import styles from "./admin.module.css";
@@ -23,9 +24,7 @@ export default async function AdminLayout({
         <section className={styles.adminShell}>
           <aside className={styles.sidebar} aria-label="Admin sidebar">
             <Link className={styles.brand} href="/admin">
-              <span>
-                <Box size={20} strokeWidth={3} />
-              </span>
+              <LogoMark className={styles.logoMark} size={20} />
               <strong>MR Admin</strong>
             </Link>
 

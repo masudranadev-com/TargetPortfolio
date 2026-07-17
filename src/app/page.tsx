@@ -4,8 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import {
   type CSSProperties,
-  type Dispatch,
-  type SetStateAction,
   useEffect,
   useState,
 } from "react";
@@ -436,8 +434,6 @@ const qaPosts = [
 export default function Home() {
   const [activeWorkflowSlide, setActiveWorkflowSlide] = useState(0);
   const [activeTestimonial, setActiveTestimonial] = useState(0);
-  const [isWorkflowPaused, setIsWorkflowPaused] = useState(false);
-  const [isTestimonialPaused, setIsTestimonialPaused] = useState(false);
 
   const selectedWorkflowSlide = workflowSlides[activeWorkflowSlide];
   const selectedTestimonial = testimonials[activeTestimonial];
@@ -468,10 +464,6 @@ export default function Home() {
   };
 
   useEffect(() => {
-    if (isWorkflowPaused) {
-      return;
-    }
-
     const workflowTimer = window.setInterval(() => {
       setActiveWorkflowSlide((current) =>
         current === workflowSlides.length - 1 ? 0 : current + 1,
@@ -479,13 +471,9 @@ export default function Home() {
     }, 5000);
 
     return () => window.clearInterval(workflowTimer);
-  }, [isWorkflowPaused]);
+  }, []);
 
   useEffect(() => {
-    if (isTestimonialPaused) {
-      return;
-    }
-
     const testimonialTimer = window.setInterval(() => {
       setActiveTestimonial((current) =>
         current === testimonials.length - 1 ? 0 : current + 1,
@@ -493,7 +481,7 @@ export default function Home() {
     }, 5000);
 
     return () => window.clearInterval(testimonialTimer);
-  }, [isTestimonialPaused]);
+  }, []);
 
   return (
     <main className={styles.shell}>
@@ -505,7 +493,6 @@ export default function Home() {
         WorkflowIcon={WorkflowIcon}
         showPreviousWorkflowSlide={showPreviousWorkflowSlide}
         showNextWorkflowSlide={showNextWorkflowSlide}
-        setIsWorkflowPaused={setIsWorkflowPaused}
         setActiveWorkflowSlide={setActiveWorkflowSlide}
       />
       <TestimonialsSection
@@ -513,7 +500,6 @@ export default function Home() {
         selectedTestimonial={selectedTestimonial}
         showPreviousTestimonial={showPreviousTestimonial}
         showNextTestimonial={showNextTestimonial}
-        setIsTestimonialPaused={setIsTestimonialPaused}
         setActiveTestimonial={setActiveTestimonial}
       />
       <FeatureSection />
@@ -1205,7 +1191,6 @@ function WorkflowSection({
   WorkflowIcon,
   showPreviousWorkflowSlide,
   showNextWorkflowSlide,
-  setIsWorkflowPaused,
   setActiveWorkflowSlide,
 }: {
   activeWorkflowSlide: number;
@@ -1213,8 +1198,7 @@ function WorkflowSection({
   WorkflowIcon: LucideIcon;
   showPreviousWorkflowSlide: () => void;
   showNextWorkflowSlide: () => void;
-  setIsWorkflowPaused: Dispatch<SetStateAction<boolean>>;
-  setActiveWorkflowSlide: Dispatch<SetStateAction<number>>;
+  setActiveWorkflowSlide: (slideIndex: number) => void;
 }) {
   return (
     <section
@@ -1251,12 +1235,6 @@ function WorkflowSection({
         <div
           className={styles.caseGrid}
           key={activeWorkflowSlide}
-          onMouseEnter={() => setIsWorkflowPaused(true)}
-          onMouseLeave={() => setIsWorkflowPaused(false)}
-          onFocus={() => setIsWorkflowPaused(true)}
-          onBlur={() => setIsWorkflowPaused(false)}
-          onPointerDown={() => setIsWorkflowPaused(true)}
-          onPointerUp={() => setIsWorkflowPaused(false)}
         >
           <WorkflowVisual
             slide={selectedWorkflowSlide}
@@ -1314,15 +1292,13 @@ function TestimonialsSection({
   selectedTestimonial,
   showPreviousTestimonial,
   showNextTestimonial,
-  setIsTestimonialPaused,
   setActiveTestimonial,
 }: {
   activeTestimonial: number;
   selectedTestimonial: Testimonial;
   showPreviousTestimonial: () => void;
   showNextTestimonial: () => void;
-  setIsTestimonialPaused: Dispatch<SetStateAction<boolean>>;
-  setActiveTestimonial: Dispatch<SetStateAction<number>>;
+  setActiveTestimonial: (testimonialIndex: number) => void;
 }) {
   return (
     <section
@@ -1359,12 +1335,6 @@ function TestimonialsSection({
         <div
           className={styles.testimonialSlider}
           key={activeTestimonial}
-          onMouseEnter={() => setIsTestimonialPaused(true)}
-          onMouseLeave={() => setIsTestimonialPaused(false)}
-          onFocus={() => setIsTestimonialPaused(true)}
-          onBlur={() => setIsTestimonialPaused(false)}
-          onPointerDown={() => setIsTestimonialPaused(true)}
-          onPointerUp={() => setIsTestimonialPaused(false)}
         >
           <article className={styles.testimonialFeature}>
             <div className={styles.testimonialQuote}>

@@ -1,0 +1,1099 @@
+{
+  "nextEventId": 101,
+  "clients": [
+    {
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "firstSeen": 1784266419222,
+      "lastActivity": 1784267406398,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36",
+      "locationUpdatedAt": 1784267406398,
+      "timezone": "Asia/Dhaka",
+      "language": "en-US",
+      "screen": "1920x1080",
+      "ip": "2607:740:56:1000:5ad7:bb46:de09:7abb",
+      "city": "Indianapolis",
+      "region": "Indiana",
+      "country": "United States",
+      "latitude": 39.7795,
+      "longitude": -86.1328
+    },
+    {
+      "uuid": "f8aef703-2ec5-4b2f-a67b-647a62b4937f",
+      "firstSeen": 1784266899692,
+      "lastActivity": 1784267095693,
+      "timezone": "Asia/Dhaka",
+      "language": "en-US",
+      "screen": "1920x1080",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36",
+      "locationUpdatedAt": 1784267095693
+    },
+    {
+      "uuid": "ssss",
+      "firstSeen": 1784267099289,
+      "lastActivity": 1784267406278,
+      "timezone": "Asia/Dhaka",
+      "language": "en-US",
+      "screen": "1920x1080",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36",
+      "locationUpdatedAt": 1784267406278,
+      "ip": "2607:740:56:1000:5ad7:bb46:de09:7abb",
+      "city": "Indianapolis",
+      "region": "Indiana",
+      "country": "United States",
+      "latitude": 39.7795,
+      "longitude": -86.1328
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Page session",
+      "eventType": "Time spent",
+      "occurredAt": 1784266419222,
+      "durationMs": 71819
+    },
+    {
+      "id": 2,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Loaded page",
+      "eventType": "Loaded page",
+      "occurredAt": 1784266419225,
+      "durationMs": 0
+    },
+    {
+      "id": 3,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Page session",
+      "eventType": "Time spent",
+      "occurredAt": 1784266686359,
+      "durationMs": 267134
+    },
+    {
+      "id": 4,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Loaded page",
+      "eventType": "Loaded page",
+      "occurredAt": 1784266702851,
+      "durationMs": 0
+    },
+    {
+      "id": 5,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Page session",
+      "eventType": "Time spent",
+      "occurredAt": 1784266702983,
+      "durationMs": 132
+    },
+    {
+      "id": 6,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Services",
+      "eventType": "Clicking area",
+      "occurredAt": 1784266728848,
+      "durationMs": 25997
+    },
+    {
+      "id": 7,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/service",
+      "pageTitle": "Services | MR InfinityX Target Marketplace",
+      "area": "Loaded page",
+      "eventType": "Loaded page",
+      "occurredAt": 1784266729060,
+      "durationMs": 0
+    },
+    {
+      "id": 8,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/service",
+      "pageTitle": "Services | MR InfinityX Target Marketplace",
+      "area": "Page session",
+      "eventType": "Time spent",
+      "occurredAt": 1784266729964,
+      "durationMs": 904
+    },
+    {
+      "id": 9,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/service",
+      "pageTitle": "Services | MR InfinityX Target Marketplace",
+      "area": "Loaded page",
+      "eventType": "Loaded page",
+      "occurredAt": 1784266849587,
+      "durationMs": 0
+    },
+    {
+      "id": 10,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/service",
+      "pageTitle": "Services | MR InfinityX Target Marketplace",
+      "area": "Open Ratings service page",
+      "eventType": "Clicking area",
+      "occurredAt": 1784266850540,
+      "durationMs": 953
+    },
+    {
+      "id": 11,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/service",
+      "pageTitle": "Services | MR InfinityX Target Marketplace",
+      "area": "Page session",
+      "eventType": "Time spent",
+      "occurredAt": 1784266851196,
+      "durationMs": 1609
+    },
+    {
+      "id": 12,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/service/ratings",
+      "pageTitle": "Ratings | MR InfinityX Services",
+      "area": "Loaded page",
+      "eventType": "Loaded page",
+      "occurredAt": 1784266851198,
+      "durationMs": 0
+    },
+    {
+      "id": 13,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/service/ratings",
+      "pageTitle": "Ratings | MR InfinityX Services",
+      "area": "Page session",
+      "eventType": "Time spent",
+      "occurredAt": 1784266852663,
+      "durationMs": 1465
+    },
+    {
+      "id": 14,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/service/ratings",
+      "pageTitle": "Ratings | MR InfinityX Services",
+      "area": "Loaded page",
+      "eventType": "Loaded page",
+      "occurredAt": 1784266870196,
+      "durationMs": 0
+    },
+    {
+      "id": 15,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/service/ratings",
+      "pageTitle": "Ratings | MR InfinityX Services",
+      "area": "Page session",
+      "eventType": "Time spent",
+      "occurredAt": 1784266877223,
+      "durationMs": 7027
+    },
+    {
+      "id": 16,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/service/ratings",
+      "pageTitle": "Ratings | MR InfinityX Services",
+      "area": "Loaded page",
+      "eventType": "Loaded page",
+      "occurredAt": 1784266877653,
+      "durationMs": 0
+    },
+    {
+      "id": 17,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/service/ratings",
+      "pageTitle": "Ratings | MR InfinityX Services",
+      "area": "Page session",
+      "eventType": "Time spent",
+      "occurredAt": 1784266879048,
+      "durationMs": 1395
+    },
+    {
+      "id": 18,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/service/ratings",
+      "pageTitle": "Ratings | MR InfinityX Services",
+      "area": "Loaded page",
+      "eventType": "Loaded page",
+      "occurredAt": 1784266879050,
+      "durationMs": 0
+    },
+    {
+      "id": 19,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/service/ratings",
+      "pageTitle": "Ratings | MR InfinityX Services",
+      "area": "Page session",
+      "eventType": "Time spent",
+      "occurredAt": 1784266887884,
+      "durationMs": 8834
+    },
+    {
+      "id": 20,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Loaded page",
+      "eventType": "Loaded page",
+      "occurredAt": 1784266888274,
+      "durationMs": 0
+    },
+    {
+      "id": 21,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Page session",
+      "eventType": "Time spent",
+      "occurredAt": 1784266889145,
+      "durationMs": 871
+    },
+    {
+      "id": 22,
+      "uuid": "f8aef703-2ec5-4b2f-a67b-647a62b4937f",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Loaded page",
+      "eventType": "Loaded page",
+      "occurredAt": 1784266899692,
+      "durationMs": 0
+    },
+    {
+      "id": 23,
+      "uuid": "f8aef703-2ec5-4b2f-a67b-647a62b4937f",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Page session",
+      "eventType": "Time spent",
+      "occurredAt": 1784266907253,
+      "durationMs": 7561
+    },
+    {
+      "id": 24,
+      "uuid": "f8aef703-2ec5-4b2f-a67b-647a62b4937f",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Loaded page",
+      "eventType": "Loaded page",
+      "occurredAt": 1784266907255,
+      "durationMs": 0
+    },
+    {
+      "id": 25,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Loaded page",
+      "eventType": "Loaded page",
+      "occurredAt": 1784266907414,
+      "durationMs": 0
+    },
+    {
+      "id": 26,
+      "uuid": "f8aef703-2ec5-4b2f-a67b-647a62b4937f",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Page session",
+      "eventType": "Time spent",
+      "occurredAt": 1784266918709,
+      "durationMs": 11454
+    },
+    {
+      "id": 27,
+      "uuid": "f8aef703-2ec5-4b2f-a67b-647a62b4937f",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "/?uuid=ssss",
+      "area": "Loaded page",
+      "eventType": "Loaded page",
+      "occurredAt": 1784266918711,
+      "durationMs": 0
+    },
+    {
+      "id": 28,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Page session",
+      "eventType": "Time spent",
+      "occurredAt": 1784266918906,
+      "durationMs": 11492
+    },
+    {
+      "id": 29,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Loaded page",
+      "eventType": "Loaded page",
+      "occurredAt": 1784266918910,
+      "durationMs": 0
+    },
+    {
+      "id": 30,
+      "uuid": "f8aef703-2ec5-4b2f-a67b-647a62b4937f",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "/?uuid=ssss",
+      "area": "Page session",
+      "eventType": "Time spent",
+      "occurredAt": 1784266926865,
+      "durationMs": 8154
+    },
+    {
+      "id": 31,
+      "uuid": "f8aef703-2ec5-4b2f-a67b-647a62b4937f",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Loaded page",
+      "eventType": "Loaded page",
+      "occurredAt": 1784266926868,
+      "durationMs": 0
+    },
+    {
+      "id": 32,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Page session",
+      "eventType": "Time spent",
+      "occurredAt": 1784266926940,
+      "durationMs": 8030
+    },
+    {
+      "id": 33,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Loaded page",
+      "eventType": "Loaded page",
+      "occurredAt": 1784266926945,
+      "durationMs": 0
+    },
+    {
+      "id": 34,
+      "uuid": "f8aef703-2ec5-4b2f-a67b-647a62b4937f",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Page session",
+      "eventType": "Time spent",
+      "occurredAt": 1784266928751,
+      "durationMs": 1883
+    },
+    {
+      "id": 35,
+      "uuid": "f8aef703-2ec5-4b2f-a67b-647a62b4937f",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Loaded page",
+      "eventType": "Loaded page",
+      "occurredAt": 1784266928897,
+      "durationMs": 0
+    },
+    {
+      "id": 36,
+      "uuid": "f8aef703-2ec5-4b2f-a67b-647a62b4937f",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Page session",
+      "eventType": "Time spent",
+      "occurredAt": 1784267042399,
+      "durationMs": 113502
+    },
+    {
+      "id": 37,
+      "uuid": "f8aef703-2ec5-4b2f-a67b-647a62b4937f",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Loaded page",
+      "eventType": "Loaded page",
+      "occurredAt": 1784267042401,
+      "durationMs": 0
+    },
+    {
+      "id": 38,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Page session",
+      "eventType": "Time spent",
+      "occurredAt": 1784267042449,
+      "durationMs": 115504
+    },
+    {
+      "id": 39,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Loaded page",
+      "eventType": "Loaded page",
+      "occurredAt": 1784267042452,
+      "durationMs": 0
+    },
+    {
+      "id": 40,
+      "uuid": "f8aef703-2ec5-4b2f-a67b-647a62b4937f",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Page session",
+      "eventType": "Time spent",
+      "occurredAt": 1784267091858,
+      "durationMs": 49457
+    },
+    {
+      "id": 41,
+      "uuid": "f8aef703-2ec5-4b2f-a67b-647a62b4937f",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Loaded page",
+      "eventType": "Loaded page",
+      "occurredAt": 1784267091990,
+      "durationMs": 0
+    },
+    {
+      "id": 42,
+      "uuid": "f8aef703-2ec5-4b2f-a67b-647a62b4937f",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Page session",
+      "eventType": "Time spent",
+      "occurredAt": 1784267095693,
+      "durationMs": 3703
+    },
+    {
+      "id": 43,
+      "uuid": "ssss",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Loaded page",
+      "eventType": "Loaded page",
+      "occurredAt": 1784267099289,
+      "durationMs": 0
+    },
+    {
+      "id": 44,
+      "uuid": "ssss",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Page session",
+      "eventType": "Time spent",
+      "occurredAt": 1784267104996,
+      "durationMs": 5707
+    },
+    {
+      "id": 45,
+      "uuid": "ssss",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Loaded page",
+      "eventType": "Loaded page",
+      "occurredAt": 1784267105150,
+      "durationMs": 0
+    },
+    {
+      "id": 46,
+      "uuid": "ssss",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Page session",
+      "eventType": "Time spent",
+      "occurredAt": 1784267105718,
+      "durationMs": 568
+    },
+    {
+      "id": 47,
+      "uuid": "ssss",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Loaded page",
+      "eventType": "Loaded page",
+      "occurredAt": 1784267105839,
+      "durationMs": 0
+    },
+    {
+      "id": 48,
+      "uuid": "ssss",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Page session",
+      "eventType": "Time spent",
+      "occurredAt": 1784267105920,
+      "durationMs": 81
+    },
+    {
+      "id": 49,
+      "uuid": "ssss",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Loaded page",
+      "eventType": "Loaded page",
+      "occurredAt": 1784267106039,
+      "durationMs": 0
+    },
+    {
+      "id": 50,
+      "uuid": "ssss",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Page session",
+      "eventType": "Time spent",
+      "occurredAt": 1784267107906,
+      "durationMs": 1867
+    },
+    {
+      "id": 51,
+      "uuid": "ssss",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Loaded page",
+      "eventType": "Loaded page",
+      "occurredAt": 1784267113505,
+      "durationMs": 0
+    },
+    {
+      "id": 52,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Page session",
+      "eventType": "Time spent",
+      "occurredAt": 1784267113554,
+      "durationMs": 71102
+    },
+    {
+      "id": 53,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Loaded page",
+      "eventType": "Loaded page",
+      "occurredAt": 1784267113558,
+      "durationMs": 0
+    },
+    {
+      "id": 54,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Browser location",
+      "eventType": "Location updated",
+      "occurredAt": 1784267114686,
+      "durationMs": 0
+    },
+    {
+      "id": 55,
+      "uuid": "ssss",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Browser location",
+      "eventType": "Location updated",
+      "occurredAt": 1784267114694,
+      "durationMs": 0
+    },
+    {
+      "id": 56,
+      "uuid": "ssss",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Page session",
+      "eventType": "Time spent",
+      "occurredAt": 1784267124234,
+      "durationMs": 10729
+    },
+    {
+      "id": 57,
+      "uuid": "ssss",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Loaded page",
+      "eventType": "Loaded page",
+      "occurredAt": 1784267124239,
+      "durationMs": 0
+    },
+    {
+      "id": 58,
+      "uuid": "ssss",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Browser location",
+      "eventType": "Location updated",
+      "occurredAt": 1784267124240,
+      "durationMs": 0
+    },
+    {
+      "id": 59,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Page session",
+      "eventType": "Time spent",
+      "occurredAt": 1784267124297,
+      "durationMs": 10740
+    },
+    {
+      "id": 60,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Loaded page",
+      "eventType": "Loaded page",
+      "occurredAt": 1784267124300,
+      "durationMs": 0
+    },
+    {
+      "id": 61,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Browser location",
+      "eventType": "Location updated",
+      "occurredAt": 1784267124301,
+      "durationMs": 0
+    },
+    {
+      "id": 62,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Page session",
+      "eventType": "Time spent",
+      "occurredAt": 1784267222432,
+      "durationMs": 98133
+    },
+    {
+      "id": 63,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Loaded page",
+      "eventType": "Loaded page",
+      "occurredAt": 1784267292102,
+      "durationMs": 0
+    },
+    {
+      "id": 64,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Page session",
+      "eventType": "Time spent",
+      "occurredAt": 1784267292343,
+      "durationMs": 244
+    },
+    {
+      "id": 65,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Browser location",
+      "eventType": "Location updated",
+      "occurredAt": 1784267293637,
+      "durationMs": 0
+    },
+    {
+      "id": 66,
+      "uuid": "ssss",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Page session",
+      "eventType": "Time spent",
+      "occurredAt": 1784267331683,
+      "durationMs": 207444
+    },
+    {
+      "id": 67,
+      "uuid": "ssss",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Loaded page",
+      "eventType": "Loaded page",
+      "occurredAt": 1784267331684,
+      "durationMs": 0
+    },
+    {
+      "id": 68,
+      "uuid": "ssss",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Browser location",
+      "eventType": "Location updated",
+      "occurredAt": 1784267331685,
+      "durationMs": 0
+    },
+    {
+      "id": 69,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Loaded page",
+      "eventType": "Loaded page",
+      "occurredAt": 1784267331758,
+      "durationMs": 0
+    },
+    {
+      "id": 70,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Browser location",
+      "eventType": "Location updated",
+      "occurredAt": 1784267331761,
+      "durationMs": 0
+    },
+    {
+      "id": 71,
+      "uuid": "ssss",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Page session",
+      "eventType": "Time spent",
+      "occurredAt": 1784267334925,
+      "durationMs": 3241
+    },
+    {
+      "id": 72,
+      "uuid": "ssss",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Loaded page",
+      "eventType": "Loaded page",
+      "occurredAt": 1784267334928,
+      "durationMs": 0
+    },
+    {
+      "id": 73,
+      "uuid": "ssss",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Browser location",
+      "eventType": "Location updated",
+      "occurredAt": 1784267334930,
+      "durationMs": 0
+    },
+    {
+      "id": 74,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Page session",
+      "eventType": "Time spent",
+      "occurredAt": 1784267334998,
+      "durationMs": 3240
+    },
+    {
+      "id": 75,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Loaded page",
+      "eventType": "Loaded page",
+      "occurredAt": 1784267335002,
+      "durationMs": 0
+    },
+    {
+      "id": 76,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Browser location",
+      "eventType": "Location updated",
+      "occurredAt": 1784267335004,
+      "durationMs": 0
+    },
+    {
+      "id": 77,
+      "uuid": "ssss",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Page session",
+      "eventType": "Time spent",
+      "occurredAt": 1784267338165,
+      "durationMs": 3237
+    },
+    {
+      "id": 78,
+      "uuid": "ssss",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Loaded page",
+      "eventType": "Loaded page",
+      "occurredAt": 1784267338168,
+      "durationMs": 0
+    },
+    {
+      "id": 79,
+      "uuid": "ssss",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Browser location",
+      "eventType": "Location updated",
+      "occurredAt": 1784267338170,
+      "durationMs": 0
+    },
+    {
+      "id": 80,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Page session",
+      "eventType": "Time spent",
+      "occurredAt": 1784267338921,
+      "durationMs": 3919
+    },
+    {
+      "id": 81,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Loaded page",
+      "eventType": "Loaded page",
+      "occurredAt": 1784267338923,
+      "durationMs": 0
+    },
+    {
+      "id": 82,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Browser location",
+      "eventType": "Location updated",
+      "occurredAt": 1784267338925,
+      "durationMs": 0
+    },
+    {
+      "id": 83,
+      "uuid": "ssss",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Page session",
+      "eventType": "Time spent",
+      "occurredAt": 1784267340512,
+      "durationMs": 2344
+    },
+    {
+      "id": 84,
+      "uuid": "ssss",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Loaded page",
+      "eventType": "Loaded page",
+      "occurredAt": 1784267340514,
+      "durationMs": 0
+    },
+    {
+      "id": 85,
+      "uuid": "ssss",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Browser location",
+      "eventType": "Location updated",
+      "occurredAt": 1784267340514,
+      "durationMs": 0
+    },
+    {
+      "id": 86,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Page session",
+      "eventType": "Time spent",
+      "occurredAt": 1784267340574,
+      "durationMs": 1651
+    },
+    {
+      "id": 87,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Loaded page",
+      "eventType": "Loaded page",
+      "occurredAt": 1784267340576,
+      "durationMs": 0
+    },
+    {
+      "id": 88,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Browser location",
+      "eventType": "Location updated",
+      "occurredAt": 1784267340577,
+      "durationMs": 0
+    },
+    {
+      "id": 89,
+      "uuid": "ssss",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Page session",
+      "eventType": "Time spent",
+      "occurredAt": 1784267366072,
+      "durationMs": 25558
+    },
+    {
+      "id": 90,
+      "uuid": "ssss",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "/?uuid=ssss",
+      "area": "Loaded page",
+      "eventType": "Loaded page",
+      "occurredAt": 1784267366074,
+      "durationMs": 0
+    },
+    {
+      "id": 91,
+      "uuid": "ssss",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "/?uuid=ssss",
+      "area": "Browser location",
+      "eventType": "Location updated",
+      "occurredAt": 1784267366084,
+      "durationMs": 0
+    },
+    {
+      "id": 92,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Page session",
+      "eventType": "Time spent",
+      "occurredAt": 1784267366269,
+      "durationMs": 25693
+    },
+    {
+      "id": 93,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Loaded page",
+      "eventType": "Loaded page",
+      "occurredAt": 1784267366271,
+      "durationMs": 0
+    },
+    {
+      "id": 94,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Browser location",
+      "eventType": "Location updated",
+      "occurredAt": 1784267366272,
+      "durationMs": 0
+    },
+    {
+      "id": 95,
+      "uuid": "ssss",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "/?uuid=ssss",
+      "area": "Page session",
+      "eventType": "Time spent",
+      "occurredAt": 1784267406275,
+      "durationMs": 40201
+    },
+    {
+      "id": 96,
+      "uuid": "ssss",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Loaded page",
+      "eventType": "Loaded page",
+      "occurredAt": 1784267406276,
+      "durationMs": 0
+    },
+    {
+      "id": 97,
+      "uuid": "ssss",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Browser location",
+      "eventType": "Location updated",
+      "occurredAt": 1784267406278,
+      "durationMs": 0
+    },
+    {
+      "id": 98,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "/?uuid=ssss",
+      "area": "Loaded page",
+      "eventType": "Loaded page",
+      "occurredAt": 1784267406396,
+      "durationMs": 0
+    },
+    {
+      "id": 99,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "area": "Page session",
+      "eventType": "Time spent",
+      "occurredAt": 1784267406391,
+      "durationMs": 40120
+    },
+    {
+      "id": 100,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "/?uuid=ssss",
+      "area": "Browser location",
+      "eventType": "Location updated",
+      "occurredAt": 1784267406398,
+      "durationMs": 0
+    }
+  ],
+  "pageTimes": [
+    {
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "totalMs": 365082,
+      "visits": 4,
+      "lastActivity": 1784266728848
+    },
+    {
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/service",
+      "pageTitle": "Services | MR InfinityX Target Marketplace",
+      "totalMs": 3466,
+      "visits": 3,
+      "lastActivity": 1784266851196
+    },
+    {
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/service/ratings",
+      "pageTitle": "Ratings | MR InfinityX Services",
+      "totalMs": 18721,
+      "visits": 4,
+      "lastActivity": 1784266887884
+    },
+    {
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "totalMs": 390739,
+      "visits": 13,
+      "lastActivity": 1784267406391
+    },
+    {
+      "uuid": "f8aef703-2ec5-4b2f-a67b-647a62b4937f",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "MR InfinityX | Target Marketplace Services",
+      "totalMs": 195714,
+      "visits": 7,
+      "lastActivity": 1784267095693
+    },
+    {
+      "uuid": "ssss",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "/?uuid=ssss",
+      "totalMs": 300977,
+      "visits": 11,
+      "lastActivity": 1784267406275
+    }
+  ]
+}

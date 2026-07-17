@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import {
   type CSSProperties,
   type Dispatch,
@@ -11,14 +12,12 @@ import {
 import {
   ArrowRight,
   BarChart3,
-  Box,
   ChevronLeft,
   ChevronRight,
   ClipboardList,
   KeyRound,
   Mail,
   MessageCircle,
-  MoreVertical,
   PenTool,
   Quote,
   ShoppingBag,
@@ -28,14 +27,8 @@ import {
   Users,
   type LucideIcon,
 } from "lucide-react";
+import { ContactButton } from "@/components/ContactButton";
 import styles from "./page.module.css";
-
-const navItems = [
-  { label: "Home", href: "/" },
-  { label: "Services", href: "/#services" },
-  { label: "Process", href: "/#process" },
-  { label: "Testimonials", href: "/#testimonials" },
-];
 
 const platforms = [
   {
@@ -63,31 +56,37 @@ const platforms = [
 const services = [
   {
     title: "Ratings",
+    href: "/service/ratings",
     copy: "Improve trust signals, feedback flow, and product quality insights",
     icon: Star,
   },
   {
     title: "Reviews",
+    href: "/service/reviews",
     copy: "Review monitoring, response guidance, and conversion learnings",
     icon: MessageCircle,
   },
   {
     title: "Product SEO",
+    href: "/service/product-seo",
     copy: "Optimize Target titles, bullets, descriptions, and attributes",
     icon: Tags,
   },
   {
     title: "Keyword Analysis",
+    href: "/service/keyword-research",
     copy: "Map buyer search intent to product categories and seasonal demand",
     icon: KeyRound,
   },
   {
     title: "Content Management",
+    href: "/service/content-management",
     copy: "Create images, video, titles, descriptions, and rich product copy",
     icon: PenTool,
   },
   {
     title: "Customer Q/A Post",
+    href: "/service/customer-qa-post",
     copy: "Create helpful Q&A posts that answer shopper concerns and improve confidence",
     icon: ClipboardList,
   },
@@ -435,7 +434,6 @@ const qaPosts = [
 ];
 
 export default function Home() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeWorkflowSlide, setActiveWorkflowSlide] = useState(0);
   const [activeTestimonial, setActiveTestimonial] = useState(0);
   const [isWorkflowPaused, setIsWorkflowPaused] = useState(false);
@@ -499,7 +497,6 @@ export default function Home() {
 
   return (
     <main className={styles.shell}>
-      <HeaderSection isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       <HeroSection />
       <ServicesSection />
       <WorkflowSection
@@ -523,82 +520,7 @@ export default function Home() {
       <NeedsSection />
       <StatsSection />
       <PlatformsSection />
-      <FooterSection />
     </main>
-  );
-}
-
-function HeaderSection({
-  isMenuOpen,
-  setIsMenuOpen,
-}: {
-  isMenuOpen: boolean;
-  setIsMenuOpen: Dispatch<SetStateAction<boolean>>;
-}) {
-  return (
-    <section className={styles.headerSection} aria-label="Site navigation">
-      <div className={styles.container}>
-        <header className={styles.header}>
-          <a className={styles.brand} href="#" aria-label="MR Infinityx home">
-            <span className={styles.logoMark}>
-              <Box size={22} strokeWidth={3} />
-            </span>
-            <span>MR Infinityx</span>
-          </a>
-
-          <nav className={styles.nav} aria-label="Primary navigation">
-            {navItems.map((item) => (
-              <a href={item.href} key={item.label}>
-                {item.label}
-              </a>
-            ))}
-          </nav>
-
-          <div className={styles.headerActions}>
-            <a className={styles.greenButton} href="#">
-              Get Started
-            </a>
-          </div>
-
-          <button
-            className={styles.mobileMenuButton}
-            type="button"
-            aria-label={isMenuOpen ? "Close navigation menu" : "Open navigation menu"}
-            aria-expanded={isMenuOpen}
-            aria-controls="mobile-menu"
-            onClick={() => setIsMenuOpen((open) => !open)}
-          >
-            <MoreVertical size={22} />
-          </button>
-
-          <div
-            className={`${styles.mobileMenu} ${
-              isMenuOpen ? styles.mobileMenuOpen : ""
-            }`}
-            id="mobile-menu"
-          >
-            <nav aria-label="Mobile navigation">
-              {navItems.map((item) => (
-                <a
-                  href={item.href}
-                  key={item.label}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.label}
-                </a>
-              ))}
-            </nav>
-            <a
-              className={styles.mobileMenuCta}
-              href="#"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Get Started
-            </a>
-          </div>
-        </header>
-      </div>
-    </section>
   );
 }
 
@@ -617,23 +539,8 @@ function HeroSection() {
             content management.
           </p>
           <div className={styles.heroActions}>
-            <a className={styles.greenButton} href="#">
-              Get Started
-            </a>
-            <a className={styles.outlineButton} href="#">
-              Learn More <ArrowRight size={18} />
-            </a>
+            <ContactButton className={styles.greenButton} />
           </div>
-        </div>
-
-        <div className={styles.heroArt}>
-          <Image
-            src="/assets/hero-dashboard-clean.png"
-            alt="Floating enterprise analytics dashboard"
-            width={670}
-            height={530}
-            priority
-          />
         </div>
       </div>
     </section>
@@ -646,17 +553,22 @@ function ServicesSection() {
       <div className={styles.container}>
         <h2>Our Services</h2>
         <div className={styles.serviceGrid}>
-          {services.map(({ title, copy, icon: Icon }) => (
-            <article className={styles.serviceCard} key={title}>
+          {services.map(({ title, href, copy, icon: Icon }) => (
+            <Link
+              className={styles.serviceCard}
+              href={href}
+              key={title}
+              aria-label={`Open ${title} service page`}
+            >
               <span className={styles.serviceIcon}>
                 <Icon size={31} strokeWidth={1.8} />
               </span>
               <h3>{title}</h3>
               <p>{copy}</p>
-              <a href="#" aria-label={`${title} service details`}>
+              <span className={styles.serviceArrow} aria-hidden="true">
                 <ArrowRight size={17} />
-              </a>
-            </article>
+              </span>
+            </Link>
           ))}
         </div>
       </div>
@@ -1603,80 +1515,6 @@ function PlatformsSection() {
         </div>
       </div>
     </section>
-  );
-}
-
-function FooterSection() {
-  return (
-    <footer className={styles.footer}>
-      <div className={styles.container}>
-        <div className={styles.footerGrid}>
-          <FooterColumn
-            title="Company"
-            links={["About Us", "Process", "Platforms", "Contact"]}
-          />
-          <FooterColumn
-            title="Services"
-            links={["Ratings", "Reviews", "Product SEO", "Content"]}
-          />
-          <FooterColumn
-            title="Platforms"
-            links={["Target Platform", "Amazon", "Walmart", "eBay"]}
-          />
-          <FooterColumn
-            title="Resources"
-            links={["SEO Audit", "Keyword Plan", "Content Brief", "Help Center"]}
-          />
-
-          <div className={styles.newsletter}>
-            <h3>Subscribe to our newsletter</h3>
-            <form>
-              <label htmlFor="email">Email address</label>
-              <input id="email" type="email" placeholder="Enter your email" />
-              <button type="submit">Subscribe</button>
-            </form>
-            <p>Get product SEO, content, and marketplace optimization notes.</p>
-          </div>
-        </div>
-
-        <div className={styles.footerBottom}>
-          <p>(c) 2026 MR InfinityX. Independent marketplace services.</p>
-          <div className={styles.socials} aria-label="Social links">
-            <a href="#" aria-label="Facebook">
-              f
-            </a>
-            <a href="#" aria-label="Twitter">
-              x
-            </a>
-            <a href="#" aria-label="LinkedIn">
-              in
-            </a>
-            <a href="#" aria-label="Instagram">
-              ig
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
-  );
-}
-
-function FooterColumn({
-  title,
-  links,
-}: {
-  title: string;
-  links: string[];
-}) {
-  return (
-    <div className={styles.footerColumn}>
-      <h3>{title}</h3>
-      {links.map((link) => (
-        <a href="#" key={link}>
-          {link}
-        </a>
-      ))}
-    </div>
   );
 }
 

@@ -1,12 +1,12 @@
 {
-  "nextEventId": 101,
+  "nextEventId": 102,
   "clients": [
     {
       "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
       "firstSeen": 1784266419222,
-      "lastActivity": 1784267406398,
+      "lastActivity": 1784267468135,
       "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36",
-      "locationUpdatedAt": 1784267406398,
+      "locationUpdatedAt": 1784267468135,
       "timezone": "Asia/Dhaka",
       "language": "en-US",
       "screen": "1920x1080",
@@ -1044,6 +1044,16 @@
       "eventType": "Location updated",
       "occurredAt": 1784267406398,
       "durationMs": 0
+    },
+    {
+      "id": 101,
+      "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
+      "pagePath": "/?uuid=ssss",
+      "pageTitle": "/?uuid=ssss",
+      "area": "Page session",
+      "eventType": "Time spent",
+      "occurredAt": 1784267468135,
+      "durationMs": 61740
     }
   ],
   "pageTimes": [
@@ -1074,10 +1084,10 @@
     {
       "uuid": "eb88d89e-4760-4c81-aa80-e9e53e35526e",
       "pagePath": "/?uuid=ssss",
-      "pageTitle": "MR InfinityX | Target Marketplace Services",
-      "totalMs": 390739,
-      "visits": 13,
-      "lastActivity": 1784267406391
+      "pageTitle": "/?uuid=ssss",
+      "totalMs": 452479,
+      "visits": 14,
+      "lastActivity": 1784267468135
     },
     {
       "uuid": "f8aef703-2ec5-4b2f-a67b-647a62b4937f",
